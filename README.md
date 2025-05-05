@@ -40,12 +40,14 @@ In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to t
 > [!WARNING]
 > If `cell_reference` is a range more than one cell wide and the formula is not used as an array formula, only the numeric value of the first row in `cell_reference` is returned.
 
+# Indexing With Blank In-Between Rows 
+
 ### Using FILTER(), ROWS(), and SEQUENCE()
 
 ```
 =SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)
 ```
-
+`
 #### FILTER() Syntax
 ```
 =FILTER(range, condition1, [condition2, ...])
@@ -63,6 +65,6 @@ In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to t
 #### ROWS() Syntax
 
 
-| C:C<>""  |     |
-| February | $80     |
-| March    | $420    |
+C:C<>""
+
+# Indexing Using Counting Numbers Based on Criterion 
