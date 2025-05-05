@@ -10,6 +10,7 @@
 ### Using ROW()
 
 ![image](https://github.com/user-attachments/assets/b25eeb86-833a-481f-9054-af2e5ddcb9b8)
+Formula: `=ROW()`
 In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_reference`, the formula returns the row number wherein the formula has been entered, leading to the value of `1`. The formula can be dragged/ copied to the subsequent rows, allowing them to follow the same principle (i.e. `A2` → `2`, `A3` → `3`, `A4` → `4`).
 
 #### ROW() Syntax
@@ -26,6 +27,7 @@ In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_refere
 
 ### Using ROW() with Manual Row Adjustment for Data with Headers
 ![image](https://github.com/user-attachments/assets/445f926f-11a4-4f0b-8fed-a8b719031bd1)
+Formula: `=ROW()-2`
 In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to the previous (i.e. `B3` → `3`), with the main difference being the `-2` added at the end of the formula, which accounts for the two rows (i.e. empty row for visual clearance and header) above the row wherein the count starts. Consequently, `3-2=1`. The same formula can be dragged/ copied to the succeeding rows, allowing them to follow the same principle (i.e. `B4` → `4-2=2`, `B5` → `5-2=3`, `B6` → `6-2=4`).
 
 #### ROW() Syntax
@@ -42,12 +44,12 @@ In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to t
 
 # Indexing With Blank In-Between Rows 
 
+# Dynamic Indexing With Additional Rows (Added at the Bottom)
+
 ### Using FILTER(), ROWS(), and SEQUENCE()
 
-```
-=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)
-```
-`
+Formula: `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`
+
 #### FILTER() Syntax
 ```
 =FILTER(range, condition1, [condition2, ...])
