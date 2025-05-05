@@ -13,6 +13,7 @@
 In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_reference`, the formula returns the row number wherein the formula has been entered, leading to the value of `1`. Subsequent rows follow the same principle (i.e. `A2` → `2`, `A3` → `3`, `A4` → `4`).
 
 #### ROW() Syntax
+
 ```
 =ROW([cell_reference])
 ```
@@ -27,7 +28,20 @@ In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_refere
 ![image](https://github.com/user-attachments/assets/445f926f-11a4-4f0b-8fed-a8b719031bd1)
 In the selected cell `A3`, `=ROW()-2` was entered. The principle is similar to the previous (i.e. `A3` → `3`), with the main difference being the `-2` added at the end of the formula, which accounts for the two rows (i.e. empty row for visual clearance and header) above the row wherein the count starts. Consequently, `3-2=1`.
 
+#### ROW() Syntax
+
+```
+=ROW([cell_reference])
+```
+|Parameter| Explanation |
+| -------- | ----------- |
+| `cell_reference` *(optional)* | The cell whose row number will be returned. (Default: Row where formula was entered.) |
+
+> [!WARNING]
+> If `cell_reference` is a range more than one cell wide and the formula is not used as an array formula, only the numeric value of the first row in `cell_reference` is returned.
+
 ### Using FILTER(), ROWS(), and SEQUENCE()
+
 ```
 =SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)
 ```
