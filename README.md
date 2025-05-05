@@ -11,7 +11,9 @@
 
 ![image](https://github.com/user-attachments/assets/b25eeb86-833a-481f-9054-af2e5ddcb9b8)
 
-> =ROW()
+<p align="center">
+`=ROW()`
+</p>
 
 In the selected cell `A1`,<kbd>=ROW()</kbd> was entered. With an unspecified `cell_reference`, the formula returns the row number wherein the formula has been entered, leading to the value of `1`. The formula can be dragged/ copied to the subsequent rows, allowing them to follow the same principle (i.e. `A2` → `2`, `A3` → `3`, `A4` → `4`).
 
