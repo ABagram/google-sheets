@@ -25,16 +25,7 @@ In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_refere
 
 ### Using ROW() with Manual Row Adjustment for Data with Headers
 ![image](https://github.com/user-attachments/assets/445f926f-11a4-4f0b-8fed-a8b719031bd1)
-
-`=ROW()-2`
-
-
-Explanation: 
-
-|Parameter| Explanation |
-| -------- | ----------- |
-| `ROW()`| Returns the row number. |
-| `-2`| Accounts for the two rows above (empty row for visual clearance and header). |
+In the selected cell `A3`, `=ROW()-2` was entered. The principle is similar to the previous (i.e. `A3` → `3`), with the main difference being the `-2` added at the end of the formula, which accounts for the two rows (i.e. empty row for visual clearance and header) above the row wherein the count starts. Consequently, `3-2=1`.
 
 ### Using FILTER(), ROWS(), and SEQUENCE()
 ```
