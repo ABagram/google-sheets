@@ -10,7 +10,7 @@
 ### Using ROW()
 
 ![image](https://github.com/user-attachments/assets/b25eeb86-833a-481f-9054-af2e5ddcb9b8)
-`=ROW()` returns 1 as the cell address wherein the formula is placed is A**1**. 
+In the selected cell `A1`,`=ROW()` was entered. With an unspecified `cell_reference`, the formula returns the row number wherein the formula has been entered, leading to the value of `1`. Subsequent rows follow the same principle (i.e. `A2` → `2`, `A3` → `3`, `A4` → `4`).
 
 #### ROW() Syntax
 ```
@@ -26,9 +26,8 @@
 ### Using ROW() with Manual Row Adjustment for Data with Headers
 ![image](https://github.com/user-attachments/assets/445f926f-11a4-4f0b-8fed-a8b719031bd1)
 
-```
-=ROW()-2
-```
+`=ROW()-2`
+
 
 Explanation: 
 
