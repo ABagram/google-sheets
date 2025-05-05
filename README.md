@@ -11,9 +11,7 @@
 
 ![image](https://github.com/user-attachments/assets/b25eeb86-833a-481f-9054-af2e5ddcb9b8)
 
-<p align="center">
 `=ROW()`
-</p>
 
 In the selected cell `A1`,<kbd>=ROW()</kbd> was entered. With an unspecified `cell_reference`, the formula returns the row number wherein the formula has been entered, leading to the value of `1`. The formula can be dragged/ copied to the subsequent rows, allowing them to follow the same principle (i.e. `A2` → `2`, `A3` → `3`, `A4` → `4`).
 
@@ -32,7 +30,7 @@ In the selected cell `A1`,<kbd>=ROW()</kbd> was entered. With an unspecified `ce
 ### Using ROW() with Manual Row Adjustment for Data with Headers
 ![image](https://github.com/user-attachments/assets/445f926f-11a4-4f0b-8fed-a8b719031bd1)
 
-Formula: <kbd>=ROW()-2</kbd>
+`=ROW()-2`
 
 In the selected cell `B3`, <kbd>=ROW()-2</kbd> was entered. The principle is similar to the previous (i.e. `B3` → `3`), with the main difference being the `-2` added at the end of the formula, which accounts for the two rows (i.e. empty row for visual clearance and header) above the row wherein the count starts. Consequently, `3-2=1`. The same formula can be dragged/ copied to the succeeding rows, allowing them to follow the same principle (i.e. `B4` → `4-2=2`, `B5` → `5-2=3`, `B6` → `6-2=4`).
 
@@ -54,8 +52,7 @@ In the selected cell `B3`, <kbd>=ROW()-2</kbd> was entered. The principle is sim
 
 ### Using FILTER(), ROWS(), and SEQUENCE()
 
-Formula: <kbd>=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)</kbd>
-```
+`=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`
 
 #### FILTER() Syntax
 ```
