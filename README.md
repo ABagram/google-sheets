@@ -54,6 +54,14 @@ In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to t
 
 `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`
 
+In the selected cell `B3`, `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`was entered. The formula oversees an entire range (i.e. `C:C`), then filters non-empty rows using the condition `C:C<>""`. The `ROWS()` function then counts the number of filtered rows (i.e. non-empty rows). The `SEQUENCE()` function then spills a range of numbers from `1`, counting from the row wherein the formula was entered, up to the counted number of non-empty rows minus 1. As the range being checked is the entire column `C`, which contains a header row (i.e. a non-empty row), it is necessary to add `-1` at the end. Otherwise, specify the specific range to be filtered (e.g. `C3:C`) → `=SEQUENCE(ROWS(FILTER(C3:C, C3:C<>""))-1)`.
+
+> [!WARNING]
+> If there are *no* non-empty rows (i.e. entire `C:C` range is empty, a `#VALUE` error will be shown as `ROWS(FILTER(C:C, C:C<>""))` will output `0` → `0-1=-1`; however, the number of rows for the `SEQUENCE()` function must be `greater than or equal to 0`.
+
+> [!CAUTION]
+> While the indexing is dynamic, it will not be appropriate for sheets with blank in-between cells. Below is an example:
+
 #### FILTER() Syntax
 ```
 =FILTER(range, condition1, [condition2, ...])
