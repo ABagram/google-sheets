@@ -89,4 +89,14 @@ C:C<>""
 # Indexing Using Counting Numbers Based on Criterion 
 
 # Converting Currency
+
 `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615`
+
+In the selected cell, `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615` was entered. The `ticker` `"CURRENCY:USDPHP"` allows one to convert 1 US Dollar (USD) to Philippine Pesos (PHP) using the current exchange rate as retrieved from Google Finance. The exchange rate is then multiplied by 1615, converting USD 1615 to its equivalent value in PHP.
+
+```
+=GOOGLEFINANCE(ticker, [attribute], [start_date], [end_date|num_days], [interval])
+```
+
+|Parameter| Explanation |
+| -------- | ----------- |
