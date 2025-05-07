@@ -87,3 +87,6 @@ The `ROWS()` function then counts the number of filtered rows (i.e. non-empty ro
 C:C<>""
 
 # Indexing Using Counting Numbers Based on Criterion 
+
+# Converting Currency
+`=GOOGLEFINANCE("CURRENCY:USDPHP")*1615`
