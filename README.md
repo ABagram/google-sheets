@@ -89,6 +89,7 @@ C:C<>""
 # Indexing Using Counting Numbers Based on Criterion 
 
 # Converting Currency
+![image](https://github.com/user-attachments/assets/c4b668bb-074b-4aea-87bc-5f724c12927d)
 
 `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615`
 
@@ -100,3 +101,7 @@ In the selected cell, `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615` was entered. The 
 
 |Parameter| Explanation |
 | -------- | ----------- |
+
+# Formatting Currency
+![image](https://github.com/user-attachments/assets/229728c2-e153-41ef-9493-6370ff7fc226)
+<kbd>Format</kbd> → <kbd>Number</kbd> → <kbd>Custom number format</kbd> `_("₱"* #,##0.00_);_("₱"* \(#,##0.00\);_("₱"* "-"??_);_(@_)` → <kbd>Apply</kbd>
