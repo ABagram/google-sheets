@@ -101,6 +101,12 @@ In the selected cell, `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615` was entered. The 
 
 |Parameter| Explanation |
 | -------- | ----------- |
+|`ticker`| |
+|`[attribute]`| |
+|`[start_date]`| |
+|`[end_date|num_days]`| |
+|`[interval]`| |
+
 
 # Formatting Currency
 ![image](https://github.com/user-attachments/assets/229728c2-e153-41ef-9493-6370ff7fc226)
@@ -111,7 +117,7 @@ In the selected cell, `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615` was entered. The 
 ![image](https://github.com/user-attachments/assets/94060d56-b0f8-4942-a04a-e6a05af4e375)
 `=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")`
 
-In the selected cell, `=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")` was entered. The desired full name format is as follows: Last Name, First Name M., where M. refers to middle initial. The `CONCATENATE()` function works by appending multiple strings to one another, namely, the string from cell `C3`, a comma followed by a space ", ", the string from cell `D3`, a space " ", a trimmed string by taking the first character from the leftmost using `LEFT(E3,1)`, and a period ".").
+In the selected cell, `=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")` was entered. The desired full name format is as follows: Last Name, First Name M., where M. refers to middle initial. The `CONCATENATE()` function works by appending multiple strings to one another, namely, the string from cell `C3`, a comma followed by a space `", "`, the string from cell `D3`, a space `" "`, a trimmed string by taking the first character from the left using `LEFT(E3,1)`, and a period `"."`).
 
 #### LEFT() Syntax
 
