@@ -54,7 +54,7 @@ In the selected cell `B3`, `=ROW()-2` was entered. The principle is similar to t
 
 `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`
 
-In the selected cell `B3`, `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`was entered. The formula oversees a specified range (i.e. `C:C`), then filters it to include only the non-empty rows using the condition `C:C<>""`. 
+In the selected cell `B3`, `=SEQUENCE(ROWS(FILTER(C:C, C:C<>""))-1)`was entered. The formula `FILTER(C:C, C:C<>"")` oversees a specified range (i.e. `C:C`), then filters it to include only the non-empty rows using the condition `C:C<>""`. 
 
 > [!NOTE]
 > The "not equal" operator, represented by the symvol`<>` is used to compare two values and return a TRUE or FALSE.Therefore, `C:C<>""` checks whether each row within the `C:C` range is not equal to an empty string (represented as `""`), returning TRUE for every 
@@ -105,3 +105,15 @@ In the selected cell, `=GOOGLEFINANCE("CURRENCY:USDPHP")*1615` was entered. The 
 # Formatting Currency
 ![image](https://github.com/user-attachments/assets/229728c2-e153-41ef-9493-6370ff7fc226)
 <kbd>Format</kbd> → <kbd>Number</kbd> → <kbd>Custom number format</kbd> `_("₱"* #,##0.00_);_("₱"* \(#,##0.00\);_("₱"* "-"??_);_(@_)` → <kbd>Apply</kbd>
+
+# Concatenate
+
+![image](https://github.com/user-attachments/assets/94060d56-b0f8-4942-a04a-e6a05af4e375)
+`=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")`
+
+In the selected cell, `=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")` was entered. The desired full name format is as follows: Last Name, First Name M., where M. refers to middle initial. The `CONCATENATE()` function works by appending multiple strings to one another, namely, the string from cell `C3`, a comma followed by a space ", ", the string from cell `D3`, a space " ", a trimmed string by taking the first character from the leftmost using `LEFT(E3,1)`, and a period ".").
+
+#### LEFT() Syntax
+
+#### CONCATENATE() Syntax
+
