@@ -86,7 +86,11 @@ The `ROWS()` function then counts the number of filtered rows (i.e. non-empty ro
 
 C:C<>""
 
-# Indexing Using Counting Numbers Based on Criterion 
+# Indexing Using Summation (Cumulative Counting) Based on Criterion 
+![image](https://github.com/user-attachments/assets/28bfec64-5521-4491-bde0-c4da9f9690cb)
+`=countifs($D$3:$D3, D3)`
+
+In the selected cell `B3`, `=countifs($D$3:$D3, D3)` was entered. The `criteria_range1` is `$D$3:$D3`, wherein `$D$3` is an absolute reference to the starting point of the range. At row 3, `=COUNTIFS($D$3:$D3, D3)` becomes `=COUNTIFS(D3:D3, D3)`, counting the number of cells in the range `D3:D3` are equal to the value in `D3`. The first occurrence of a specific value under column D will then be indexed as `1` on column `B`, where the formula is entered. The formula can be dragged down to account for other data. In that case, at cell `B4`, the formula will be `=COUNTIFS($D$3:$D4, D4)`, counting the number of cells in the range `D3:D4` that are equal to the value in `D4` (`M`), which is `2`. In the event that the value at `D4` is different from that of `D3` (e.g. `F`), the count will be `1`.
 
 # Converting Currency
 ![image](https://github.com/user-attachments/assets/c4b668bb-074b-4aea-87bc-5f724c12927d)
