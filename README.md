@@ -127,3 +127,7 @@ In the selected cell, `=CONCATENATE(C3, ", ", D3, " ", LEFT(E3,1), ".")` was ent
 
 #### CONCATENATE() Syntax
 
+# Separating Sheet into Multiple Sheets Based on Criterion
+
+## Using Pivot Table
+Select the cells that contain all information that you want to pivot. Ensure that there are no gaps in-between the selection as this will be regarded as two ranges and therefore, cannot be registered properly.
